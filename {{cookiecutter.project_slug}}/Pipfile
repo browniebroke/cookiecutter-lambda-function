@@ -11,7 +11,4 @@ name = "pypi"
 
 [dev-packages]
 
-cookiecutter = "*"
-pytest-cookies = "*"
-pytest = "*"
-"flake8" = "*"
+chalice = "*"
