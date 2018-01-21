@@ -1,6 +1,8 @@
 Cookiecutter Lambda Function
 ============================
 
+[![CircleCI](https://img.shields.io/circleci/project/github/browniebroke/cookiecutter-lambda-function.svg)](https://circleci.com/gh/browniebroke/cookiecutter-lambda-function)
+
 A cookiecutter template to create AWS Lambda function
 
 Requirements
