@@ -12,3 +12,4 @@ name = "pypi"
 [dev-packages]
 
 chalice = "*"
+pytest = "*"

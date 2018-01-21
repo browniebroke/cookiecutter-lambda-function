@@ -19,3 +19,29 @@ infrastructure. Chalice is installed in an isolated environment by running:
     ```
     pipenv install
     ```
+    
+Testing
+-------
+
+Uses pytest. To run the whole test suite:
+
+    ```
+    pipenv run pytest
+    ```
+
+Deployment
+----------
+
+See [Chalice documentation](http://chalice.readthedocs.io/en/latest/quickstart.html#credentials),
+you will need to have your AWS credentials setup, and then you can run Chalice inside of your
+virtualenv:
+
+    ```
+    pipenv run chalice deploy
+    ```
+
+Credits
+-------
+
+This project has been generated with [Cookiecutter](https://github.com/audreyr/cookiecutter)
+using the [Lambda function template](https://github.com/browniebroke/cookiecutter-lambda-function)
