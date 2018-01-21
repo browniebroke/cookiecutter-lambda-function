@@ -1,0 +1,32 @@
+# Python CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.4
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "Pipfile.lock" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run: pip install pipenv
+      - run: pipenv install -d --three
+
+      - save_cache:
+          paths:
+            - ~/.local/share/virtualenvs/
+          key: v1-dependencies-{{ checksum "Pipfile.lock" }}
+
+      - run:
+          name: run tests
+          command: pipenv run pytest
