@@ -6,7 +6,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.6.4
+      - image: browniebroke/pipenv
     working_directory: ~/repo
 
     steps:
@@ -19,7 +19,6 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: pip install pipenv
       - run: pipenv install -d --three
 
       - save_cache:
