@@ -12,17 +12,17 @@ jobs:
     steps:
       - checkout
 
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "Pipfile.lock" }}
+#      # Download and cache dependencies
+#      - restore_cache:
+#          keys:
+#          - v1-dependencies-{{ checksum "Pipfile.lock" }}
 
       - run: pipenv install -d --three --system
 
-      - save_cache:
-          paths:
-            - ~/.local/share/virtualenvs/
-          key: v1-dependencies-{{ checksum "Pipfile.lock" }}
+#      - save_cache:
+#          paths:
+#            - ~/.local/share/virtualenvs/
+#          key: v1-dependencies-{{ checksum "Pipfile.lock" }}
 
       - run:
           name: run tests
