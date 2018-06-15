@@ -1,0 +1,13 @@
+{
+  "version": "2.0",
+  "app_name": "{{ cookiecutter.project_slug }}",
+  "environment_variables": {
+    "PROJECT_NAME": "{{ cookiecutter.project_name }}"
+  },
+  "lambda_timeout": {{ cookiecutter.timeout }},
+  "autogen_policy": true,
+  "stages": {
+    "dev": {},
+    "prod": {}
+  }
+}

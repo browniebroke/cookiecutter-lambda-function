@@ -28,6 +28,7 @@ Options
 
 - `endpoint`: Create a HTTP endpoint entry point - `@app.route` style
 - `schedule`: Create a [schedule event](http://chalice.readthedocs.io/en/latest/topics/events.html#scheduled-events)
+- `timeout`: Lambda function timeout (default to 60)
 
 License
 -------

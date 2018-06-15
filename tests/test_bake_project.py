@@ -28,6 +28,8 @@ def test_project_tree(cookies):
     assert result.project.join('app.py').isfile()
     assert result.project.join('requirements.txt').isfile()
     assert result.project.join('requirements-tests.txt').isfile()
+    assert result.project.join('.chalice').isdir()
+    assert result.project.join('.chalice', 'config.json').isfile()
 
 
 def test_app_content(cookies):
