@@ -17,7 +17,7 @@ jobs:
 #          keys:
 #          - v1-dependencies-{{ checksum "Pipfile.lock" }}
 
-      - run: pipenv install -d --three --system
+      - run: pipenv install -d --three
 
 #      - save_cache:
 #          paths:
