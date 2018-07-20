@@ -1,1 +1,1 @@
-chalice==1.5.0
+chalice==1.6.0
