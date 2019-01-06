@@ -4,6 +4,6 @@
   ],
   "pip_requirements": {
     "fileMatch": ["requirements*.txt$"]
-  }
+  },
   "automerge": true
 }
