@@ -1,2 +1,2 @@
 -r requirements.txt
-pytest==4.1.1
+pytest==4.2.0
